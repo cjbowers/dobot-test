@@ -1,0 +1,199 @@
+
+@charset "UTF-8";
+@font-face {
+  font-family: 'QuatroSlab';
+  src: url("fonts/QuatroSlab_Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LFT_Etica_book';
+  src: url("fonts/LFT_Etica_book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LFT_Etica_Reg';
+  src: url("fonts/LFT_Etica_Reg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'LFT_Etica_Semibold';
+  src: url("fonts/LFT_Etica_Semibold.otf") format("opentype");
+}
+
+
+/*  layout */
+.l-main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.l-wrap--s {
+  float: left;
+  width: 34.55%;
+  padding-right: 7.27%;
+}
+
+@media (max-width: 719px) {
+  .l-wrap--s {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* type */
+.t-display {
+  margin-bottom: 5px;
+  display: inline-block;
+  font-family: "QuatroSlab", sans-serif;
+  line-height:1.2em;
+  color: #fff;
+
+}
+
+@media (min-width: 720px) {
+  .t-display{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 719px) {
+  .t-display{
+    font-size: 24px;
+  }
+}
+
+.t-heading {
+  margin-bottom: 24px;
+  font-family: "LFT_Etica_book", sans-serif;
+  font-size: 16px;
+  color: #555a5b;
+}
+
+.t-text {
+  margin-bottom: 12px;
+  font-family: "LFT_Etica_Reg", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #abadad;
+}
+
+.t-link {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display: inline-block;
+  font-family: "LFT_Etica_Reg", sans-serif;
+  color: #01bfc1;
+  text-decoration: none;
+  transition-duration: .3s;
+  transition-property: color;
+}
+
+.t-link:hover {
+  color: #f8695a;
+}
+
+.t-link__arrow {
+  display: inline;
+  font-family: "Arial", sans-serif;
+}
+
+/*  header */
+body {
+  border-top: 2px solid #f2695b;
+  background-color: #1a2325;
+}
+
+.logo svg {
+  height:80px;
+  width:80px;
+}
+
+.cls-1 {
+  fill: #f2695b;
+}
+
+.cls-2 {
+  fill: #fff;
+}
+
+
+/* article */
+.product {
+  padding-top: 108px;
+  padding-bottom: 108px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+@media (max-width: 719px) {
+  .product {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.product:last-child{
+  border: 0;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.product__image {
+  width: 58.18%;
+  float: right;
+}
+
+@media (max-width: 719px) {
+  .product__image {
+    margin-bottom: 24px;
+    padding: none;
+    float: none;
+    width: 100%;
+  }
+}
+
+/*  button */
+.product__purchase {
+   padding-top: 32px;
+   border-top: 1px dotted rgba(255,255,255,.1);
+}
+
+.product__cost {
+  padding-top: 12px;
+  float: left;
+  font-family: "QuatroSlab", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.button {
+  margin-left: 24px;
+  padding: 15px 30px 11px;
+  display: inline-block;
+  float:left;
+  border: 1px solid #4dd9da;
+  background: repeating-linear-gradient(
+    45deg,
+    #01bfc1,
+    #01bfc1 1px,
+    #01c2c3 1px,
+    #01c2c3 2px);
+  font-family: "LFT_Etica_Semibold", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition-duration: .3s;
+  transition-property: opacity;
+}
+
+.button:hover {
+  opacity: .6;
+}
+
+
+
+
