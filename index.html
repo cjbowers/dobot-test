@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
 </head>
 
@@ -21,20 +20,22 @@
     </symbol>
   </svg>
 
-<main class="l-main">
-  <header class="header">
+<header class="header">
+  <h1 aria-label="Dobot">
     <a class="logo" href="#top">
       <svg><use xlink:href="#dobot-logo"></svg>
     </a>
-  </header>
+  </h1>
+</header>
 
-  <article class="product clearfix">
-    <div class="l-wrap--s">
+<main class="l-main">
+  <section class="product clearfix">
+    <div class="product__header">
       <h1 class="t-display">2012 Monster Calender</h1>
       <h2 class="t-heading">6x6 Screen Print Calender</h2>
     </div>
     <img class="product__image" src="images/2012MonsterCalender.jpg">
-    <div class="l-wrap--s">
+    <div class="product__description">
       <p class="t-text">This is something I wrote to fill space, but would actually mean something very important to this piece of art we are currently trying to sell. Still just trying to fill space here so that it seems to look like an actual post rather than some made up thing.</p>
       <p class="t-text">Guess what. I’m still just trying to fill space here. This paragraph is to look like someone was writing a lot and had to take it into another paragraph, but it’s actually just some sort of BS so that we can fill more space.</p>
       <a class="t-link" href='#top'>
@@ -46,9 +47,9 @@
         <a class="button" href="#top">BUY THIS</a>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article class="product clearfix">
+  <section class="product clearfix">
     <div class="l-wrap--s">
       <h1 class="t-display">An Anchored Heart</h1>
       <h2 class="t-heading">11x14 Framed Digital Print</h2>
@@ -66,9 +67,9 @@
         <a class="button" href="#top">BUY THIS</a>
       </div>
     </div>
-  </article>
+  </section>
 
-  <article class="product clearfix">
+  <section class="product clearfix">
     <div class="l-wrap--s">
       <h1 class="t-display">Buy Film</h1>
       <h2 class="t-heading">4x4 Vinyl Stickers</h2>
@@ -86,7 +87,7 @@
         <a class="button" href="#top">BUY THIS</a>
       </div>
     </div>
-  </article>
+  </section>
 </main>
 
 </body>
